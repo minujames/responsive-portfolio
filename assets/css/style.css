@@ -1,0 +1,362 @@
+
+html{
+  overflow: auto;
+}
+
+body{
+  font:16px Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  line-height: 32px;
+  color: #777777;
+  background-image: url(../images/background.png);
+  min-height: 100%;
+}
+
+header{
+  background-color: #ffffff;
+  width: 100%;
+  overflow: auto;
+}
+
+#header-div{
+  width: 960px;
+  margin: 0 auto;
+  overflow: auto;
+  clear: both;
+}
+
+#name-section{
+  float: left;
+  background-color: #4aaaa5;
+}
+
+h1{
+  color: #ffffff;
+  padding: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: #4aaaa5;
+}
+
+#link-section{
+  float:right;
+  padding: 30px 0;
+}
+
+#profile-img{
+  float:left;
+  padding: 0 25px 0 0;
+  width: 200px;
+  height: 180px;
+}
+
+#page-div{  
+  width: 100%;
+  padding-bottom: 100px;
+  min-height: 100%;
+  /*overflow: auto;*/
+  position: relative;
+}
+
+#content-section{
+  margin: 0 auto;
+  width: 960px;
+  min-height: 100%;
+  overflow: auto;
+  clear: both;
+  position: relative;
+
+}
+
+#main-section{
+  padding: 30px 30px;
+  margin: 40px auto;
+  float: left;
+  width: 590px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+#aboutme-content-div{
+  margin: 25px 0 0 0;
+}
+
+#side-section{
+  float: right;
+  padding: 30px 30px;
+  width: 210px;
+  height: 140px;
+  margin: 40px 0px 40px 40px;
+  background-color: #ffffff;
+}
+
+#media-icons-section{
+  margin: 25px 0;
+}
+
+a{
+  color: #777777;
+  text-decoration: none;
+}
+
+a:hover{ 
+  color: #4aaaa5;
+}
+
+#about-link{
+  margin: 0px 20px 0px 0px;
+}
+
+#portfolio-link{
+  margin: 0px 20px 0px 20px;
+}
+
+#contact-link{
+  margin: 0px 0px 0px 20px;
+}
+
+.vertical-division{
+  border-style: solid;
+  border-width: 0 1px 0px 0px;
+  border-color: #cccccc;
+  color: #cccccc;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+h2, h3{
+  color: #4aaaa5;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 24px;
+  margin: 0 0 20px 0;
+}
+
+h3{
+  font-size: 20px;
+  margin: 0 0 20px 0;
+}
+
+hr{
+  margin: 0;
+  border: 1px solid #cccccc;
+}
+
+.media-icons{
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
+#git-icon, #linkedin-icon{
+  padding-right: 15px;
+}
+
+footer{
+  display: block;
+  width: 100%;
+  height: 90px;
+  background-color: #666666;
+  color: #cccccc;
+  text-align: center;
+  /*clear: both;*/
+  font-size: 12px;
+  border-style: solid;
+  border-width: 10px 0px 0px 0px;
+  border-color: #4aaaa5;
+  position: fixed;
+  bottom: 0;
+}
+
+#footer-text{
+  margin: 25px 0;
+  position: relative;
+}
+
+.project{
+  width: 280px;
+  height: 200px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.project-left{
+  float: left;
+}
+
+.project-right{
+  float: right;
+}
+
+.project-name{
+  padding: 10px 0;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.project-image{
+  width: 280px;
+  height: 200px;
+}
+
+#contact-div{
+  margin-top: 20px;
+}
+
+input[type=text]
+{
+  width: 100%;
+  height: 30px;
+  margin-bottom: 15px;
+  color: #b0b0b0;
+  font-size: 15px;
+  border-style: solid 2px;
+}
+
+input[type=submit]
+{
+  padding:10px 20px; 
+  border:0 none;
+  cursor:pointer;
+  background-color: #4aaaa5;
+  font-size: 18px; 
+  color: #ffffff;
+}
+
+textarea{
+  height: 200px;
+  width: 100%;
+  border:solid 1px #cccccc;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #b0b0b0;
+}
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear:both;
+}
+
+@media screen and (max-width: 980px) {
+  #header-div, #content-section{
+    width: 725px;
+  }
+
+  #main-section{
+    width: 355px;
+  }
+
+  #side-section
+  {
+    margin-left: 25px;
+    width: 210px;
+  }
+
+  #profile-img{
+    width: 100%;
+    height: auto;
+    float: none;
+    padding: 0 25px 5px 0;
+  }
+  
+  .project, .project-image{
+    float: left;
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  header, #page_div{
+    width: 100%;
+  }
+  
+  #header-div, #content-section{
+    width: 95%;
+  }
+
+  #main-section{
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  #side-section{
+    width: 100%;
+    margin-left:0;
+    float: left;
+    margin-top: 0;
+  }
+
+  #profile-img{
+    width: 100%;
+    height: auto;
+    padding: 10px 22px 10px 0;
+    float: left;
+  }
+
+  .project{
+    width:48%;
+    height: auto;
+    position: relative;
+    padding:0 auto;
+  }
+
+  .project-right{
+    float: right;
+  }
+
+  .project-image{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header, #page-div{
+    width: 100%;
+  }
+  
+  #header-div, #content-section{
+    width: 95%;
+    overflow: auto;
+  }
+
+  #main-section{
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  #name-section, #link-section{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin:auto auto;
+  }
+
+  #profile-img{
+    width: 100%;
+    height: auto;
+  }
+
+  .project{
+    width: 100%;
+    height: auto;
+  }
+
+  .project-image{
+    width: 100%;
+    height: auto;
+  }
+}
