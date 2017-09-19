@@ -5,9 +5,9 @@ A responsive layout is achived by using media queries. Three breakpoints: 980px,
 
 
 ## Built With
-[Media Queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp)
-[HTML](https://www.w3schools.com/html/)
-[CSS](https://www.w3schools.com/css/)
+*[Media Queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp)
+*[HTML](https://www.w3schools.com/html/)
+*[CSS](https://www.w3schools.com/css/)
 
 ## Deployment
 The Responsive Portfolio website is accessible at https://minujames.github.io/responsive-portfolio/
